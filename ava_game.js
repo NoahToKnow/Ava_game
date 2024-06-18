@@ -18,14 +18,14 @@ function initGame() {
         y: 150,
         width: 20,
         height: 20,
-        gravity: 0.4, // Reduced gravity
-        lift: -10, // Adjusted lift to balance with gravity
+        gravity: 0.2, // Reduced gravity
+        lift: -7, // Adjusted lift to balance with gravity
         velocity: 0
     };
 
     const pipes = [];
-    const pipeWidth = 30;
-    const pipeGap = 200; // Increased gap size
+    const pipeWidth = 20;
+    const pipeGap = 300; // Increased gap size
     let frame = 0;
     let score = 0;
 
