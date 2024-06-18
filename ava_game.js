@@ -29,8 +29,10 @@ function initGame() {
     let frame = 0;
     let score = 0;
 
-    document.addEventListener('keydown', () => {
-        bird.velocity = bird.lift;
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Space' || e.key === ' ') {
+            bird.velocity = bird.lift;
+        }
     });
 
     function drawBird() {
@@ -113,4 +115,3 @@ function initGame() {
 
     gameLoop();
 }
-
