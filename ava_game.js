@@ -36,12 +36,12 @@ function initGame() {
     });
 
     function drawBird() {
-        context.fillStyle = '#FFD700';
+        context.fillStyle = '#DD88BB';
         context.fillRect(bird.x, bird.y, bird.width, bird.height);
     }
 
     function drawPipes() {
-        context.fillStyle = '#00FF00';
+        context.fillStyle = '#661199';
         pipes.forEach(pipe => {
             context.fillRect(pipe.x, 0, pipeWidth, pipe.top);
             context.fillRect(pipe.x, canvas.height - pipe.bottom, pipeWidth, pipe.bottom);
